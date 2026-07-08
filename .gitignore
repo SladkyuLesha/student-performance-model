@@ -185,3 +185,6 @@ data/raw/*.csv
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+
+# Local agent instructions
+AGENTS.md
