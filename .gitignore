@@ -188,3 +188,18 @@ data/processed/*
 
 # Local agent instructions
 AGENTS.md
+
+
+# Local editor settings
+.vscode/
+
+# Local environment files
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Track the original public dataset
+!data/raw/student_data.csv
