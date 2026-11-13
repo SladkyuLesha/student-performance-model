@@ -192,6 +192,13 @@ AGENTS.md
 
 # Local editor settings
 .vscode/
+.idea/
+
+# Temporary editor files
+*.tmp
+*.swp
+*~
+~$*
 
 # Local environment files
 .env.*
@@ -200,6 +207,7 @@ AGENTS.md
 # Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Track the original public dataset
 !data/raw/student_data.csv

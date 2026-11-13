@@ -1,0 +1,35 @@
+{
+  "scenario": "early",
+  "model": "Lasso alpha=1.0",
+  "engineered": false,
+  "parameters": {
+    "alpha": 1.0,
+    "copy_X": true,
+    "fit_intercept": true,
+    "max_iter": 20000,
+    "positive": false,
+    "precompute": false,
+    "random_state": null,
+    "selection": "cyclic",
+    "tol": 0.0001,
+    "warm_start": false
+  },
+  "train_rows": 151,
+  "validation_rows": 38,
+  "final_training_rows": 189,
+  "validation_metrics_before_refit": {
+    "mae": 3.816983786960459,
+    "mse": 21.344296120035562,
+    "rmse": 4.6199887575659275,
+    "r2": -0.01662973240529597
+  },
+  "selection_rule": "minimum CV MAE with 0.05 tolerance for simpler models",
+  "source_sha256": "9abe7735a64a806dae4614296ed58ac0ba6d1c4b1e6b0f321d2ac2c2fb4583a3",
+  "random_state": 42,
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "sklearn_version": "1.9.1",
+  "pandas_version": "3.0.6",
+  "joblib_version": "1.6.0",
+  "created_utc": "2026-11-13T14:46:09.366487+00:00"
+}

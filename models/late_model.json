@@ -1,0 +1,43 @@
+{
+  "scenario": "late",
+  "model": "Random forest",
+  "engineered": false,
+  "parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "train_rows": 151,
+  "validation_rows": 38,
+  "final_training_rows": 189,
+  "validation_metrics_before_refit": {
+    "mae": 1.2376152882205516,
+    "mse": 3.7085008366683914,
+    "rmse": 1.925746825693448,
+    "r2": 0.8233639473513488
+  },
+  "selection_rule": "minimum CV MAE with 0.05 tolerance for simpler models",
+  "source_sha256": "9abe7735a64a806dae4614296ed58ac0ba6d1c4b1e6b0f321d2ac2c2fb4583a3",
+  "random_state": 42,
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "sklearn_version": "1.9.1",
+  "pandas_version": "3.0.6",
+  "joblib_version": "1.6.0",
+  "created_utc": "2026-11-13T14:46:09.366487+00:00"
+}
