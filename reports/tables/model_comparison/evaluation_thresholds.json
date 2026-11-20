@@ -1,0 +1,13 @@
+{
+  "early": {
+    "max_test_mae": 3.0,
+    "min_mae_improvement": 0.1,
+    "max_batch_mae": 3.5
+  },
+  "late": {
+    "max_test_mae": 2.0,
+    "min_mae_improvement": 0.3,
+    "max_batch_mae": 2.0
+  },
+  "max_psi": 0.25
+}

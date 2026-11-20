@@ -1,0 +1,5 @@
+﻿feature,condition,changed_rows,mae
+failures,original,0,3.7209689850005065
+failures,noise_10pct_std,0,3.7209689850005065
+failures,missing_10pct_rows,4,3.7209689850005065
+failures,discrete_step_10pct_rows,4,3.782969734469036

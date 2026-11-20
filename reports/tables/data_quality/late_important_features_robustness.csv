@@ -1,0 +1,7 @@
+﻿feature,condition,changed_rows,mae
+G2,original,0,1.425305638227513
+G2,noise_10pct_std,2,1.455085896164021
+G2,missing_10pct_rows,4,1.5897979497354495
+absences,original,0,1.425305638227513
+absences,noise_10pct_std,19,1.442396412037037
+absences,missing_10pct_rows,4,1.4344678406084654

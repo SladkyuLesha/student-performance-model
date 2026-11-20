@@ -63,7 +63,7 @@ def main():
     metrics_rows.append(build_metrics_row("Gradient Boosting", "without grades", metrics_gb_without_grades))
     
     metrics_df = build_metrics_dataframe(metrics_rows)
-    reports_table_dir = Path("reports/tables")
+    reports_table_dir = Path("reports/tables/model_comparison/legacy")
     reports_table_dir.mkdir(parents=True, exist_ok=True)
 
     metrics_path = reports_table_dir / "model_metrics.csv"
@@ -71,22 +71,24 @@ def main():
     print(f"Metrics saved to {metrics_path}")
 
     # Visualizations
-    figures_dir = Path("reports/figures")
+    figures_dir = Path("reports/figures/model_comparison/legacy")
     figures_dir.mkdir(parents=True, exist_ok=True)
 
     plot_r2_comparison(metrics_df, figures_dir / "r2_comparison.png")
     plot_mae_comparison(metrics_df, figures_dir / "mae_comparison.png")
+    predictions_dir = Path("reports/figures/predictions/legacy")
+    predictions_dir.mkdir(parents=True, exist_ok=True)
     plot_actual_vs_predicted(
         y_test_with,
         y_pred_gb,
-        figures_dir / "actual_vs_predicted_gb_with_grades.png",
+        predictions_dir / "actual_vs_predicted_gb_with_grades.png",
         "Gradient Boosting",
         "with grades"
         )
     print(f"R2 comparison plot saved to {figures_dir / 'r2_comparison.png'}")
     print(f"MAE comparison plot saved to {figures_dir / 'mae_comparison.png'}")
-    print(f"Actual vs Predicted plot saved to {figures_dir / 'actual_vs_predicted_gb_with_grades.png'}")
-    
+    print(f"Actual vs Predicted plot saved to {predictions_dir / 'actual_vs_predicted_gb_with_grades.png'}")
+
     # DataFrame to store metrics
     print(metrics_df)
     print("GB with grades iterations:", gradient_boosting_model_with_grades.n_iter_)
@@ -94,4 +96,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

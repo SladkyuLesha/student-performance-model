@@ -204,6 +204,27 @@ AGENTS.md
 .env.*
 !.env.example
 
+# Local databases and private key material
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite3-wal
+*.sqlite-shm
+*.sqlite3-shm
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local application state, predictions and user data
+runtime/
+
 # Operating system files
 .DS_Store
 Thumbs.db

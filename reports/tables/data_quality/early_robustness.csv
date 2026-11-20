@@ -1,0 +1,4 @@
+﻿feature,condition,changed_rows,mae
+age,original,0,3.7209689850005065
+age,noise_10pct_std,48,3.7209689850005065
+age,missing_10pct_rows,4,3.7209689850005065

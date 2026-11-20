@@ -1,0 +1,13 @@
+﻿batch,feature,psi,warning
+batch_01,age,0.1218724720240726,False
+batch_01,absences,0.016194667038939792,False
+batch_01,failures,0.21075514791278,False
+batch_02,age,0.06829503861327378,False
+batch_02,absences,0.06290220629538926,False
+batch_02,failures,0.22413081095487708,False
+batch_03,age,0.11236568951224168,False
+batch_03,absences,0.02662986698910606,False
+batch_03,failures,0.18822030058677622,False
+batch_04,age,0.2801804419498697,True
+batch_04,absences,0.08145593589535843,False
+batch_04,failures,0.09716247798715988,False

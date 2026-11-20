@@ -1,0 +1,69 @@
+{
+  "source": "four existing random batches; independent temporary database",
+  "automatic_events": [
+    {
+      "action": "automatic_candidate",
+      "details": "2:early:20261120T123404962519Z"
+    },
+    {
+      "action": "automatic_candidate",
+      "details": "4:early:20261120T123405393729Z"
+    },
+    {
+      "action": "automatic_candidate",
+      "details": "4:late:20261120T123405752335Z"
+    }
+  ],
+  "candidate_scenario": "late",
+  "candidate": {
+    "eligible": true,
+    "old_version": "original",
+    "old_mae": 1.0090349002849002,
+    "candidate_mae": 0.8960935083435081,
+    "comparison_batch": 4,
+    "training_batches": [
+      1,
+      2,
+      3
+    ],
+    "training_rows": 308,
+    "artifact_sha256": "d9744ab812cb18044c818af3fe0065a52ff801db5fc6fdb5fb2272811dca8a3d",
+    "parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 2,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 100,
+      "n_jobs": 1,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "warning": "Случайные порции малы и ранее анализировались; оценка исследовательская."
+  },
+  "candidate_activated": true,
+  "original_restored": true,
+  "quality_demo": {
+    "input_rows": 3,
+    "accepted_rows": 1,
+    "rejected_rows": [
+      {
+        "row_number": 2,
+        "reasons_json": "[\"studytime: недопустимое значение или пропуск\"]"
+      },
+      {
+        "row_number": 3,
+        "reasons_json": "[\"failures: недопустимое значение или пропуск\"]"
+      }
+    ]
+  }
+}
